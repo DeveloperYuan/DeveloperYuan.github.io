@@ -92,18 +92,18 @@
 
 
 
-  <meta name="description" content="python读取文件时提示UnicodeDecodeError: ‘gbk’ codec can’t decode byte 0x80 in position 205: illegal multibyte sequence 解决方案112345#!/usr/bin/python3# -*- coding:utf8 -*-import codecs# 以指定编码方式方式打开文件open(&quot;filen">
-<meta name="keywords" content="python,error">
+  <meta name="description" content="最近一段时间准备开始刷leetcode的题目了，我会分享一些算法题，如果大家有任何问题或者意见建议，都可以发送邮件给我。 这道题是给定一个int数组，返回一个加起来等于指定数字的，两个数字组成的索引数组。可以假定每个输入都有一个结果，且你不可以用同一个数字两次进行相加。示例给定 nums = [2, 7, 11, 15], target = 9,由于 nums[0] + nums[1] = 2 +">
+<meta name="keywords" content="leetcode,java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python读文件报错解决">
-<meta property="og:url" content="https://developeryuan.github.io/2019/06/30/python-read-file-error-solution/index.html">
+<meta property="og:title" content="Two Sum">
+<meta property="og:url" content="https://developeryuan.github.io/2019/07/07/two-sum/index.html">
 <meta property="og:site_name" content="DeveloperYuan">
-<meta property="og:description" content="python读取文件时提示UnicodeDecodeError: ‘gbk’ codec can’t decode byte 0x80 in position 205: illegal multibyte sequence 解决方案112345#!/usr/bin/python3# -*- coding:utf8 -*-import codecs# 以指定编码方式方式打开文件open(&quot;filen">
+<meta property="og:description" content="最近一段时间准备开始刷leetcode的题目了，我会分享一些算法题，如果大家有任何问题或者意见建议，都可以发送邮件给我。 这道题是给定一个int数组，返回一个加起来等于指定数字的，两个数字组成的索引数组。可以假定每个输入都有一个结果，且你不可以用同一个数字两次进行相加。示例给定 nums = [2, 7, 11, 15], target = 9,由于 nums[0] + nums[1] = 2 +">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-30T07:17:24.461Z">
+<meta property="og:updated_time" content="2019-07-07T05:26:04.257Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python读文件报错解决">
-<meta name="twitter:description" content="python读取文件时提示UnicodeDecodeError: ‘gbk’ codec can’t decode byte 0x80 in position 205: illegal multibyte sequence 解决方案112345#!/usr/bin/python3# -*- coding:utf8 -*-import codecs# 以指定编码方式方式打开文件open(&quot;filen">
+<meta name="twitter:title" content="Two Sum">
+<meta name="twitter:description" content="最近一段时间准备开始刷leetcode的题目了，我会分享一些算法题，如果大家有任何问题或者意见建议，都可以发送邮件给我。 这道题是给定一个int数组，返回一个加起来等于指定数字的，两个数字组成的索引数组。可以假定每个输入都有一个结果，且你不可以用同一个数字两次进行相加。示例给定 nums = [2, 7, 11, 15], target = 9,由于 nums[0] + nums[1] = 2 +">
 
 
 
@@ -111,7 +111,7 @@
 
   
   
-  <link rel="canonical" href="https://developeryuan.github.io/2019/06/30/python-read-file-error-solution/">
+  <link rel="canonical" href="https://developeryuan.github.io/2019/07/07/two-sum/">
 
 
 
@@ -121,7 +121,7 @@
   };
 </script>
 
-  <title>python读文件报错解决 | DeveloperYuan</title>
+  <title>Two Sum | DeveloperYuan</title>
   
 
 
@@ -320,7 +320,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://developeryuan.github.io/2019/06/30/python-read-file-error-solution/">
+    <link itemprop="mainEntityOfPage" href="https://developeryuan.github.io/2019/07/07/two-sum/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="YUANCHI">
@@ -337,7 +337,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">python读文件报错解决
+          <h1 class="post-title" itemprop="name headline">Two Sum
 
               
             
@@ -363,7 +363,7 @@
                 
               
 
-              <time title="创建时间：2019-06-30 10:39:10 / 修改时间：15:17:24" itemprop="dateCreated datePublished" datetime="2019-06-30T10:39:10+08:00">2019-06-30</time>
+              <time title="创建时间：2019-07-07 09:48:56 / 修改时间：13:26:04" itemprop="dateCreated datePublished" datetime="2019-07-07T09:48:56+08:00">2019-07-07</time>
             
 
             
@@ -420,11 +420,21 @@
       
 
       
-        <p>python读取文件时提示UnicodeDecodeError: ‘gbk’ codec can’t decode byte 0x80 in position 205: illegal multibyte sequence</p>
-<h2 id="解决方案1"><a href="#解决方案1" class="headerlink" title="解决方案1"></a>解决方案1</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python3</span></span><br><span class="line"><span class="comment"># -*- coding:utf8 -*-</span></span><br><span class="line"><span class="keyword">import</span> codecs</span><br><span class="line"><span class="comment"># 以指定编码方式方式打开文件</span></span><br><span class="line">open(<span class="string">"filename"</span>,<span class="string">'r'</span>,encoding=<span class="string">"utf8"</span>)</span><br></pre></td></tr></table></figure>
+        <p>最近一段时间准备开始刷leetcode的题目了，我会分享一些算法题，如果大家有任何问题或者意见建议，都可以发送邮件给我。</p>
+<p><em>这道题是给定一个int数组，返回一个加起来等于指定数字的，两个数字组成的索引数组。</em><br><em>可以假定每个输入都有一个结果，且你不可以用同一个数字两次进行相加。</em><br><em>示例</em><br><em>给定 nums = [2, 7, 11, 15], target = 9,</em><br><em>由于 nums[0] + nums[1] = 2 + 7 = 9,</em><br><em>所以返回 [0, 1].</em></p>
+<a id="more"></a>
+<h2 id="方法一：暴力循环"><a href="#方法一：暴力循环" class="headerlink" title="方法一：暴力循环"></a>方法一：暴力循环</h2><p>最简单的方法，循环整个数组，获取元素x然后再遍历数组得到另外一个元素y等于target-x。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; nums.length; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (nums[j] == target - nums[i]) &#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[] &#123; i, j &#125;;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"No two sum solution"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="解决方案2"><a href="#解决方案2" class="headerlink" title="解决方案2"></a>解决方案2</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 以二进制形式打开文件</span></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">"test.txt"</span>, <span class="string">"rb"</span>) <span class="keyword">as</span> f:</span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> f:</span><br><span class="line">        line = line.decode(<span class="string">"utf-8"</span>) <span class="comment"># 读取时选择指定的解码方式</span></span><br><span class="line">        some_code_to_process_line()</span><br></pre></td></tr></table></figure>
+<p>复杂度分析：<br>时间复杂度：$O(n^2)$<br>空间复杂度：O(1)</p>
+<h2 id="方法二：两步hash-table"><a href="#方法二：两步hash-table" class="headerlink" title="方法二：两步hash table"></a>方法二：两步hash table</h2><p>思路：使用一个hash table去存储int数组的值和索引，hash table的key是值，value是对应的索引。<br>步骤：<br>第一步先遍历数组得到这个hash table<br>第二步遍历数组，然后检查是否target-x存在于hash table的key中。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; nums.length; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (nums[j] == target - nums[i]) &#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[] &#123; i, j &#125;;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"No two sum solution"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p>复杂度分析：<br>时间复杂度：O(n)<br>空间复杂度：O(n)</p>
+<h2 id="方法三：一步hash-table"><a href="#方法三：一步hash-table" class="headerlink" title="方法三：一步hash table"></a>方法三：一步hash table</h2><p>思路：hash table可以不用最开始的时候遍历数组得到，可以在遍历时候把插值到hash table的动作也完成了。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</span><br><span class="line">        Map&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> complement = target - nums[i];</span><br><span class="line">            <span class="keyword">if</span> (map.containsKey(complement)) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[] &#123; map.get(complement), i &#125;;</span><br><span class="line">            &#125;</span><br><span class="line">            map.put(nums[i], i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"No two sum solution"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>复杂度分析：<br>时间复杂度：O(n)<br>空间复杂度：O(n)</p>
 
       
     </div>
@@ -451,9 +461,9 @@
         
         <div class="post-tags">
           
-            <a href="/tags/python/" rel="tag"># python</a>
+            <a href="/tags/leetcode/" rel="tag"># leetcode</a>
           
-            <a href="/tags/error/" rel="tag"># error</a>
+            <a href="/tags/java/" rel="tag"># java</a>
           
         </div>
       
@@ -466,8 +476,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/30/introduction-to-internet-protocol/" rel="next" title="互联网协议入门">
-                <i class="fa fa-chevron-left"></i> 互联网协议入门
+              <a href="/2019/06/30/python-read-file-error-solution/" rel="next" title="python读文件报错解决">
+                <i class="fa fa-chevron-left"></i> python读文件报错解决
               </a>
             
           </div>
@@ -476,8 +486,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/07/two-sum/" rel="prev" title="Two Sum">
-                Two Sum <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/07/add-two-numbers/" rel="prev" title="Add Two Numbers">
+                Add Two Numbers <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -677,7 +687,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案1"><span class="nav-number">1.</span> <span class="nav-text">解决方案1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案2"><span class="nav-number">2.</span> <span class="nav-text">解决方案2</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法一：暴力循环"><span class="nav-number">1.</span> <span class="nav-text">方法一：暴力循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法二：两步hash-table"><span class="nav-number">2.</span> <span class="nav-text">方法二：两步hash table</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法三：一步hash-table"><span class="nav-number">3.</span> <span class="nav-text">方法三：一步hash table</span></a></li></ol></div>
             
 
           </div>

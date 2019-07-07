@@ -92,18 +92,18 @@
 
 
 
-  <meta name="description" content="python读取文件时提示UnicodeDecodeError: ‘gbk’ codec can’t decode byte 0x80 in position 205: illegal multibyte sequence 解决方案112345#!/usr/bin/python3# -*- coding:utf8 -*-import codecs# 以指定编码方式方式打开文件open(&quot;filen">
-<meta name="keywords" content="python,error">
+  <meta name="description" content="给出两个非空的有向链表代表两个非负整数整数中每个数字以倒序形式存储在有向链表中将两链表相加并返回相加结果的链表例子：输入：(2-&amp;gt;4-&amp;gt;3)+(5-&amp;gt;6-&amp;gt;4)输出：7-&amp;gt;0-&amp;gt;8含义：243+564=708">
+<meta name="keywords" content="leetcode,java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python读文件报错解决">
-<meta property="og:url" content="https://developeryuan.github.io/2019/06/30/python-read-file-error-solution/index.html">
+<meta property="og:title" content="Add Two Numbers">
+<meta property="og:url" content="https://developeryuan.github.io/2019/07/07/add-two-numbers/index.html">
 <meta property="og:site_name" content="DeveloperYuan">
-<meta property="og:description" content="python读取文件时提示UnicodeDecodeError: ‘gbk’ codec can’t decode byte 0x80 in position 205: illegal multibyte sequence 解决方案112345#!/usr/bin/python3# -*- coding:utf8 -*-import codecs# 以指定编码方式方式打开文件open(&quot;filen">
+<meta property="og:description" content="给出两个非空的有向链表代表两个非负整数整数中每个数字以倒序形式存储在有向链表中将两链表相加并返回相加结果的链表例子：输入：(2-&amp;gt;4-&amp;gt;3)+(5-&amp;gt;6-&amp;gt;4)输出：7-&amp;gt;0-&amp;gt;8含义：243+564=708">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-30T07:17:24.461Z">
+<meta property="og:updated_time" content="2019-07-07T05:30:09.174Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python读文件报错解决">
-<meta name="twitter:description" content="python读取文件时提示UnicodeDecodeError: ‘gbk’ codec can’t decode byte 0x80 in position 205: illegal multibyte sequence 解决方案112345#!/usr/bin/python3# -*- coding:utf8 -*-import codecs# 以指定编码方式方式打开文件open(&quot;filen">
+<meta name="twitter:title" content="Add Two Numbers">
+<meta name="twitter:description" content="给出两个非空的有向链表代表两个非负整数整数中每个数字以倒序形式存储在有向链表中将两链表相加并返回相加结果的链表例子：输入：(2-&amp;gt;4-&amp;gt;3)+(5-&amp;gt;6-&amp;gt;4)输出：7-&amp;gt;0-&amp;gt;8含义：243+564=708">
 
 
 
@@ -111,7 +111,7 @@
 
   
   
-  <link rel="canonical" href="https://developeryuan.github.io/2019/06/30/python-read-file-error-solution/">
+  <link rel="canonical" href="https://developeryuan.github.io/2019/07/07/add-two-numbers/">
 
 
 
@@ -121,7 +121,7 @@
   };
 </script>
 
-  <title>python读文件报错解决 | DeveloperYuan</title>
+  <title>Add Two Numbers | DeveloperYuan</title>
   
 
 
@@ -320,7 +320,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://developeryuan.github.io/2019/06/30/python-read-file-error-solution/">
+    <link itemprop="mainEntityOfPage" href="https://developeryuan.github.io/2019/07/07/add-two-numbers/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="YUANCHI">
@@ -337,7 +337,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">python读文件报错解决
+          <h1 class="post-title" itemprop="name headline">Add Two Numbers
 
               
             
@@ -363,7 +363,7 @@
                 
               
 
-              <time title="创建时间：2019-06-30 10:39:10 / 修改时间：15:17:24" itemprop="dateCreated datePublished" datetime="2019-06-30T10:39:10+08:00">2019-06-30</time>
+              <time title="创建时间：2019-07-07 12:35:10 / 修改时间：13:30:09" itemprop="dateCreated datePublished" datetime="2019-07-07T12:35:10+08:00">2019-07-07</time>
             
 
             
@@ -420,11 +420,26 @@
       
 
       
-        <p>python读取文件时提示UnicodeDecodeError: ‘gbk’ codec can’t decode byte 0x80 in position 205: illegal multibyte sequence</p>
-<h2 id="解决方案1"><a href="#解决方案1" class="headerlink" title="解决方案1"></a>解决方案1</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python3</span></span><br><span class="line"><span class="comment"># -*- coding:utf8 -*-</span></span><br><span class="line"><span class="keyword">import</span> codecs</span><br><span class="line"><span class="comment"># 以指定编码方式方式打开文件</span></span><br><span class="line">open(<span class="string">"filename"</span>,<span class="string">'r'</span>,encoding=<span class="string">"utf8"</span>)</span><br></pre></td></tr></table></figure>
+        <p><em>给出两个非空的有向链表代表两个非负整数</em><br><em>整数中每个数字以倒序形式存储在有向链表中</em><br><em>将两链表相加并返回相加结果的链表</em><br><em>例子：</em><br><em>输入：(2-&gt;4-&gt;3)+(5-&gt;6-&gt;4)</em><br><em>输出：7-&gt;0-&gt;8</em><br><em>含义：243+564=708</em></p>
+<a id="more"></a>
+<h2 id="方法一：使用递归"><a href="#方法一：使用递归" class="headerlink" title="方法一：使用递归"></a>方法一：使用递归</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * public class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) &#123; val = x; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> remainder;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">addTwoNumbers</span><span class="params">(ListNode l1, ListNode l2)</span> </span>&#123;</span><br><span class="line">        remainder = <span class="number">0</span>;</span><br><span class="line">        ListNode sumN = sumNode(l1, l2);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> sumN;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> ListNode <span class="title">sumNode</span><span class="params">(ListNode l1, ListNode l2)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> v1 = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> v2 = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span>(l1 != <span class="keyword">null</span>) v1 = l1.val;</span><br><span class="line">        <span class="keyword">if</span>(l2 != <span class="keyword">null</span>) v2 = l2.val;</span><br><span class="line">        <span class="keyword">int</span> sum = v1 + v2 + remainder;</span><br><span class="line">        <span class="keyword">if</span>(sum &gt; <span class="number">9</span>)&#123;</span><br><span class="line">            remainder = sum / <span class="number">10</span>;</span><br><span class="line">            sum = sum % <span class="number">10</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            remainder = <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        ListNode sumNd = <span class="keyword">new</span> ListNode(sum);</span><br><span class="line">        <span class="keyword">if</span>((l1 != <span class="keyword">null</span> &amp;&amp; l1.next != <span class="keyword">null</span>) || (l2 != <span class="keyword">null</span> &amp;&amp; l2.next != <span class="keyword">null</span>))&#123;</span><br><span class="line">            <span class="keyword">if</span>(l1 == <span class="keyword">null</span> || l1.next == <span class="keyword">null</span>)&#123;</span><br><span class="line">                sumNd.next = sumNode(<span class="keyword">null</span>, l2.next);</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(l2 == <span class="keyword">null</span> || l2.next == <span class="keyword">null</span>)&#123;</span><br><span class="line">                sumNd.next = sumNode(l1.next, <span class="keyword">null</span>);  </span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                sumNd.next = sumNode(l1.next, l2.next);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(remainder != <span class="number">0</span>)&#123;</span><br><span class="line">            sumNd.next = <span class="keyword">new</span> ListNode(remainder);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sumNd;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="解决方案2"><a href="#解决方案2" class="headerlink" title="解决方案2"></a>解决方案2</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 以二进制形式打开文件</span></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">"test.txt"</span>, <span class="string">"rb"</span>) <span class="keyword">as</span> f:</span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> f:</span><br><span class="line">        line = line.decode(<span class="string">"utf-8"</span>) <span class="comment"># 读取时选择指定的解码方式</span></span><br><span class="line">        some_code_to_process_line()</span><br></pre></td></tr></table></figure>
+<h2 id="方法二：使用while循环"><a href="#方法二：使用while循环" class="headerlink" title="方法二：使用while循环"></a>方法二：使用while循环</h2><p>算法：</p>
+<ol>
+<li>初始化返回链表的初始节点（初始节点为空）；</li>
+<li>将余数carry初始化为0；</li>
+<li>定义p、q分别为链表l1和l2的当前节点；</li>
+<li>循环l1和l2直到二者均为空；</li>
+<li>定义x为节点p的值，如果节点p为当前链表结尾，将其设为0；定义y为节点q的值，如果节点q为当前链表结尾，将其设为0；</li>
+<li>令sum = x + y + carry，则carry = sum / 10；</li>
+<li>初始化一个新的节点，其val为sum % 10，将其设为当前节点的next节点；</li>
+<li>更新p、q为l1、l2的下一节点；</li>
+<li>循环结束后如果carry大于0，则将其作为一个新节点加入到返回链表的最后；</li>
+<li>返回初始节点的下一个节点。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * public class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) &#123; val = x; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">addTwoNumbers</span><span class="params">(ListNode l1, ListNode l2)</span> </span>&#123;</span><br><span class="line">        ListNode dummyHead = <span class="keyword">new</span> ListNode(<span class="number">0</span>);</span><br><span class="line">        ListNode p = l1, q = l2, curr = dummyHead;</span><br><span class="line">        <span class="keyword">int</span> carry = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (p != <span class="keyword">null</span> || q != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">int</span> x = (p != <span class="keyword">null</span>) ? p.val : <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">int</span> y = (q != <span class="keyword">null</span>) ? q.val : <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">int</span> sum = carry + x + y;</span><br><span class="line">            carry = sum / <span class="number">10</span>;</span><br><span class="line">            curr.next = <span class="keyword">new</span> ListNode(sum % <span class="number">10</span>);</span><br><span class="line">            curr = curr.next;</span><br><span class="line">            <span class="keyword">if</span> (p != <span class="keyword">null</span>) p = p.next;</span><br><span class="line">            <span class="keyword">if</span> (q != <span class="keyword">null</span>) q = q.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (carry &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            curr.next = <span class="keyword">new</span> ListNode(carry);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dummyHead.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p>复杂度分析：<br>时间复杂度：O(max(m,n))<br>空间复杂度：O(max(m,n))</p>
 
       
     </div>
@@ -451,9 +466,9 @@
         
         <div class="post-tags">
           
-            <a href="/tags/python/" rel="tag"># python</a>
+            <a href="/tags/leetcode/" rel="tag"># leetcode</a>
           
-            <a href="/tags/error/" rel="tag"># error</a>
+            <a href="/tags/java/" rel="tag"># java</a>
           
         </div>
       
@@ -466,8 +481,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/30/introduction-to-internet-protocol/" rel="next" title="互联网协议入门">
-                <i class="fa fa-chevron-left"></i> 互联网协议入门
+              <a href="/2019/07/07/two-sum/" rel="next" title="Two Sum">
+                <i class="fa fa-chevron-left"></i> Two Sum
               </a>
             
           </div>
@@ -475,10 +490,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/07/two-sum/" rel="prev" title="Two Sum">
-                Two Sum <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -677,7 +688,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案1"><span class="nav-number">1.</span> <span class="nav-text">解决方案1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案2"><span class="nav-number">2.</span> <span class="nav-text">解决方案2</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法一：使用递归"><span class="nav-number">1.</span> <span class="nav-text">方法一：使用递归</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法二：使用while循环"><span class="nav-number">2.</span> <span class="nav-text">方法二：使用while循环</span></a></li></ol></div>
             
 
           </div>
